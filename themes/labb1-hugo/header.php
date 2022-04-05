@@ -17,7 +17,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-8 col-sm-6">
-						<a class="logo" href="index.html">Labb 1</a>
+						<a class="logo" href="/">Labb 1</a>
 					</div>
 					<div class="col-sm-6 hidden-xs">
 						<form id="searchform" class="searchform">
@@ -48,39 +48,19 @@
 			</form>
 		</div>
 
-		<nav id="nav">
+        <nav id="nav">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12">
-						<ul class="menu">
-							<li class="current-menu-item">
-								<a href="index.html">Hem</a>
-							</li>
-							<li>
-								<a href="blogg.html">Blogg</a>
-							</li>
-							<li>
-								<a href="undersida.html">Undersida</a>
-							</li>
-							<li>
-								<a href="undersida2.html">Undersida 2</a>
-							</li>
-							<li>
-								<a href="undersida3.html">Undersida 3</a>
-							</li>
-							<li>
-								<a href="undersida4.html">Undersida 4</a>
-							</li>
-							<li>
-								<a href="kontakt.html">Kontakt</a>
-							</li>
-						</ul>
-					</div>
+
+                        <?php 
+
+                            wp_nav_menu( array(
+                                'theme_location' => 'main_menu',
+                                'container_class' => "col-xs-12"
+                            ) ); 
+
+                        ?>
+
 				</div>
 			</div>
 		</nav>
-
-		<main>
-			<section>
-				<div class="container">
-					<div class="row">
