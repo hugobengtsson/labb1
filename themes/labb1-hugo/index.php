@@ -5,11 +5,6 @@
 
 
 
-
-
-
-
-
 <?php 
     get_footer();
 ?>

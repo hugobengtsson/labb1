@@ -4,6 +4,14 @@ add_theme_support('post-thumbnails');
 add_theme_support('menus');
 
 
+add_action('after_setup_theme', 'registerMenu');
+
+function registerMenu() {
+
+    register_nav_menu('main_menu', 'Huvudmeny');
+    register_nav_menu('footer_menu', 'Footer meny');
+
+}
 
 // Changes the text on the admin-page. 
 add_filter('admin_footer_text', 'change_footer_admin');
