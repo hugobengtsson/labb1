@@ -10,6 +10,7 @@ function registerMenu() {
 
     register_nav_menu('main_menu', 'Huvudmeny');
     register_nav_menu('footer_menu', 'Footer meny');
+    register_nav_menu('subpage_menu', 'Undersida meny');
 
 }
 
