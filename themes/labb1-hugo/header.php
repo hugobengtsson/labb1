@@ -9,7 +9,7 @@
 	<script src="<?php echo get_template_directory_uri().'/js/jquery.js';?>"></script>
     <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
 
 	<div id="wrap">
 
