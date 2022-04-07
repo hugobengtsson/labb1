@@ -15,7 +15,7 @@
                                 the_post(); ?>
                             
 							<article>
-								<?php the_post_thumbnail(); ?>
+								<?php the_post_thumbnail(null, ['class' => 'img-responsive responsive--full', 'title' => 'Feature image'] ); ?>
 								<h2 class="title">
 									<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 								</h2>
@@ -31,17 +31,11 @@
                                         <?php the_category("string").","; ?>
 									</li>
 								</ul>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed sodales mauris. Aliquam felis est, efficitur vel fringilla quis, vehicula quis ex. Phasellus tristique nunc in leo faucibus, a consequat nulla sagittis. In sed mi mi. Praesent condimentum sollicitudin nibh. Vivamus vulputate purus quis volutpat fringilla. Ut tortor libero, semper eget dolor vel, hendrerit tempus dui. Suspendisse dictum efficitur blandit. In porta scelerisque nulla ac placerat.</p>
+								<p><?php the_excerpt(); ?></p>
 							</article>
 							
+							<!-- End while -->
                             <?php } ?>
-
-
-
-
-
-
-
 
 							<nav class="navigation pagination">
 								<h2 class="screen-reader-text">Inläggsnavigering</h2>
@@ -53,6 +47,9 @@
 						</div>
 						<aside id="secondary" class="col-xs-12 col-md-3">
 							<div id="sidebar">
+								<ul role="navigation">
+								<?php dynamic_sidebar('sidebar1'); ?>
+								</ul>
 								<ul>
 									<li>
 										<form id="searchform" class="searchform">
