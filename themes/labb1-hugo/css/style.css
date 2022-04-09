@@ -430,6 +430,10 @@ article .meta {
 			list-style: none;
 			margin-bottom: 30px;
 		}
+		#sidebar > ul > ul {
+			list-style: none;
+			margin-bottom: 30px;
+		}
 
 			#sidebar > ul > li > ul {
 				margin: 0;
