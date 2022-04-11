@@ -39,20 +39,7 @@
 								<?php echo paginate_links(); ?>
 							</nav>
 						</div>
-						<aside id="secondary" class="col-xs-12 col-md-3">
-							<div id="sidebar">
-								<ul>
-									<li>
-										<form id="searchform" class="searchform">
-											<?php get_search_form(); ?>
-										</form>
-									</li>
-								</ul>
-								<ul role="navigation">
-									<?php dynamic_sidebar('sidebar1'); ?>
-								</ul>
-							</div>
-						</aside>
+						<?php get_template_part('./templates/sidebar-template'); ?>
 					</div>
 				</div>
 			</section>
