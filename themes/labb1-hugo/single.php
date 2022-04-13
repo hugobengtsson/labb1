@@ -27,7 +27,7 @@
 									</li>
 									<li>
 										<i class="fa fa-tag"></i> 
-                                        <?php the_category("string").","; ?> <!-- Fetching the category(s) for the post -->
+                                        <?php the_category(", "); ?> <!-- Fetching the category(s) for the post -->
 									</li>
 								</ul>
 								<p><?php the_content(); ?></p> <!-- Fetching the content of the post -->

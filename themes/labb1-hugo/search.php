@@ -31,7 +31,7 @@
 										<i class="fa fa-user"></i> <?php the_author_posts_link();; ?> <!-- Fetching the author of the post -->
 									</li>
 									<li>
-										<i class="fa fa-tag"></i><?php the_category("string").","; ?> <!-- Fetching the category(s) for the post -->
+										<i class="fa fa-tag"></i><?php the_category(", "); ?> <!-- Fetching the category(s) for the post -->
 									</li>
 								</ul>
 								<p><?php the_excerpt(); ?></p> <!-- Fetching a shortend content of the post -->
