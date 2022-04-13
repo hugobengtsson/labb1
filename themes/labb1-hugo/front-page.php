@@ -1,4 +1,5 @@
 <?php 
+	// Fetching the header
     get_header();
 ?>
 
@@ -9,12 +10,13 @@
 					<div class="row">
 						<div class="col-xs-12">
 							<div class="hero">
+								<!-- The loop: -->
                                 <?php while ( have_posts() ) {
-                                    the_post(); ?>
-								<?php the_post_thumbnail();?>
+                                    the_post(); ?> <!-- Function for iterating through the posts -->
+								<?php the_post_thumbnail();?> <!-- Fetching the thumbnail for the post -->
 								<div class="text">
-									<h1><?php the_title(); ?></h1>
-									<p><?php the_content(); ?></p>
+									<h1><?php the_title(); ?></h1> <!-- Fetching the thumbnail for the post -->
+									<p><?php the_content(); ?></p> <!-- Fetching the content for the post -->
                                 <?php } ?>
 								</div>
 							</div>
@@ -26,5 +28,6 @@
 
 
 <?php 
+	// Fetching the footer
     get_footer();
 ?>
